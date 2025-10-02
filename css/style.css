@@ -293,6 +293,8 @@ html.dark .hero-shell {
   margin: 0;
 }
 
+/* Behövde göra 2 st rader av ingress paragraferna för att göra avståndet mellan de mindre.
+Funkade med negativ margin mellan paragraferna. Vet inte om man bör göra så, men chatgpt sa att det var okej */
 .hero-ingress+.hero-ingress {
   margin-top: -0.8rem;
 }
