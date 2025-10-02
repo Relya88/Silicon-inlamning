@@ -536,3 +536,75 @@ html.dark .feature-box:focus-visible {
   margin: 0;
 }
 
+
+/* ---------------------How does it work------------------- */
+.how-it-works {
+  background: var(--surface-1);
+  padding: 72px 0;
+}
+
+@media (width >=992px) {
+  .how-it-works {
+    padding: 85px 0;
+  }
+}
+
+.how-title {
+  font-size: 40px;
+  line-height: 1.30;
+  font-weight: 800;
+  color: var(--clr-heading);
+  text-align: center;
+  margin: 0 0 55px 0;
+}
+
+.how-phones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 48px;
+  margin: 8px 0 24px;
+}
+
+@media (width >=992px) {
+  .how-phones {
+    gap: 72px;
+  }
+}
+
+.how-phone {
+  width: 31vw;
+  max-width: 308px;
+}
+
+@media (width < 768px) {
+  .how-phones {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .how-phone {
+    width: 88%;
+  }
+}
+
+.how-subtitle {
+  font-size: 24px;
+  line-height: 1.40;
+  font-weight: 800;
+  color: var(--clr-heading);
+  text-align: center;
+  margin: 50px 0 8px;
+}
+
+.how-text {
+  font-size: 16px;
+  line-height: 1.60;
+  color: var(--clr-text);
+  max-width: 636px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
