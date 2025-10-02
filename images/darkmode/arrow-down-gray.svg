@@ -1,0 +1,6 @@
+<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ljusgrå cirkel (bakgrund) -->
+  <circle cx="18" cy="18" r="18" fill="#E0E4EF" fill-opacity="0.22"/>
+  <!-- Vit nedåtpil (chevron) -->
+  <path d="M12 15l6 6 6-6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

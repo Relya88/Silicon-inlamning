@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Silicon</title>
+</head>
+
+<body>
+
+  <!-- På grund av en synlig kant mellan header och hero sektionen i darkmode tog jag hjälp av chatgpt och lade till hero-gradienten på en wrapper (.hero-shell)
+   för att en transparent bakgrund i dark mode -->
+
+  <!-- hero shell: -->
+  <div class="hero-shell">
+
+    <!-- header section -->
+    <header>
+      <div class="container">
+        <div class="header-area">
+          <div class="logotype">
+            <a href="index.html">
+              <img src="images/Siliconlogo.svg" data-light="images/Siliconlogo.svg"
+                data-dark="images/darkmode/siliconlogo-darkmode.svg" alt="Silicon logotype">
+            </a>
+          </div>
+
+          <div class="actions">
+            <div class="darkmode">
+              <span class="darkmode-label">Dark Mode</span>
+              <label class="toggle" for="darkmode-switch" aria-label="Dark mode">
+                <input type="checkbox" id="darkmode-switch" />
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="account">
+              <a href="login.html" class="button">
+                <img src="images/Ikoner/user-icon.svg" alt="" aria-hidden="true">
+                <span class="btn-signin-text">Sign in / up</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero section-->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-area">
+          <div class="hero-content">
+            <h1 class="hero-title">Manage All Your Money in One App</h1>
+            <p class="hero-ingress">We offer you a new generation of the mobile banking.</p>
+            <p class="hero-ingress">Save, spend & manage money in your pocket.</p>
+
+            <div class="app-download-buttons">
+              <a href="#" class="btn-download" aria-label="Download on the App Store">
+                <div class="btn-area">
+                  <p class="download-app-text">Download on the</p>
+                  <img class="download-app-icon" src="images/Ikoner/apple-logo-white.svg"
+                    data-light="images/Ikoner/apple-logo-white.svg" data-dark="images/darkmode/apple-logo-dark.svg"
+                    alt="Apple App Store logo">
+                  <p class="download-app-store">App Store</p>
+                </div>
+              </a>
+
+              <a href="#" class="btn-download" aria-label="Get it on Google Play">
+                <div class="btn-area">
+                  <p class="download-app-text">GET IT ON</p>
+                  <img class="download-app-icon" src="images/Ikoner/googleplay-logo.svg"
+                    data-light="images/Ikoner/googleplay-logo.svg" data-dark="images/Ikoner/googleplay-logo.svg"
+                    alt="Google Play logo">
+                  <p class="download-app-store">Google Play</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="images/hero-image.svg" alt="App screens preview">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
