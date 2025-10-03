@@ -910,3 +910,167 @@ html.dark .feature-box:focus-visible {
   line-height: 1.4;
 }
 
+
+
+/* -------------------------FAQ--------------------- */
+.faq {
+  background: var(--surface-2);
+  padding: clamp(56px, 6vw, 80px) 0;
+}
+
+.faq .container {
+  width: min(1278px, 92%);
+  margin-inline: auto;
+}
+
+.faq-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (min-width:1200px) {
+  .faq-row {
+    grid-template-columns: 415px 746px;
+    column-gap: 135px;
+  }
+}
+
+.faq-title {
+  font-size: 30px;
+  line-height: 1.30;
+  font-weight: 800;
+  color: var(--clr-heading);
+  margin: 0 0 32px 0;
+  max-width: 306px;
+}
+
+.faq__lead-text {
+  font-size: 18px;
+  color: var(--clr-text);
+  margin: 0 0 42px 0;
+}
+
+.faq-contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.faq-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  min-height: 166px;
+  text-decoration: none;
+  color: var(--clr-heading);
+}
+
+.faq-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.kicker {
+  margin: 0 0 16px 0;
+  color: var(--clr-text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.text-link {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-link--primary {
+  color: #6366F1;
+}
+
+.text-link--success {
+  color: #22C55E;
+}
+
+.text-link__arrow {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Den blåa pilen hade inte samma storlek som den gröna, fick ta hjälp av chatgpt då jag inte lyckades lösa det själv.*/
+.text-link--primary .text-link__arrow,
+.link--primary .link-arrow {
+  transform: scale(0.6);
+  transform-origin: center;
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+  max-width: 730px;
+}
+
+.faq-item {
+  border-radius: 12px;
+  background: var(--surface-2);
+  box-shadow: 0 8px 24px rgba(11, 15, 25, .08);
+  overflow: hidden;
+  border: 1px solid #EEF1F7;
+}
+
+html.dark .faq-item {
+  border-color: var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.faq-item summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--clr-heading);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.chev {
+  width: 24px;
+  height: 24px;
+}
+
+.faq-item .chev--up {
+  display: none;
+}
+
+.faq-item[open] .chev--down {
+  display: none;
+}
+
+.faq-item[open] .chev--up {
+  display: inline;
+}
+
+.faq-item .answer {
+  padding: 0 22px 18px 22px;
+  color: var(--clr-text);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+
