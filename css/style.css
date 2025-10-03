@@ -1246,4 +1246,87 @@ html:not(.dark) .subscribe .input input {
 }
 
 
+/* -----------------------Footer--------------------- */
+.site-footer {
+  padding: 24px 0 40px;
+  background: transparent;
+}
+.site-footer-copy {
+  margin: 0;
+  text-align: center;
+  color: var(--footer-text);
+  font: 500 14px/1.6 "Manrope", sans-serif;
+}
+
+
+/* märkte mot slutet att sidan inte fungerade helt bra i mobil och tabletläge.
+Fick tipset att samla några extra media queries i footern. 
+De kompletterar alltså de som redan finns i sektionerna och gör bara layouten bättre och jämnare på olika skärmar.*/
+@media (max-width: 575px) {
+  .app-download-buttons {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    justify-content: center;
+  }
+  .btn-download {
+    width: 100%;
+  }
+  .brands-area {
+    gap: 0.75rem;
+  }
+  .brands-area a {
+    min-height: auto;
+    padding-block: 12px;
+  }
+  .brands-area img {
+    width: 100%;
+    max-width: 150px;
+  }
+  html:not(.dark) .brands-area img.brand--tweak {
+    max-width: 160px;
+  }
+}
+@media (min-width:768px) and (max-width:1024px) {
+  .hero-title {
+    font-size: clamp(36px, 5vw, 48px);
+  }
+  .hero-area {
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-image img {
+    max-width: 85%;
+    margin-inline: auto;
+  }
+  .hero-ingress+.hero-ingress {
+    margin-top: -0.4rem;
+  }
+  .app-download-buttons {
+    grid-template-columns: 1fr;
+    max-width: 460px;
+    margin-inline: 0;
+    justify-content: start;
+  }
+  .brands-area {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .mini-grid {
+    width: 100%;
+  }
+  .how-phones {
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .how-phone {
+    width: 40vw;
+    max-width: 300px;
+  }
+}
+
+
+
+
 
