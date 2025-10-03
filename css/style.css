@@ -366,3 +366,48 @@ html.dark .hero {
   background: transparent;
 }
 
+
+/* --------------------------Brands-------------------- */
+.brands {
+  padding: 4rem 0;
+  background: var(--surface-2);
+}
+
+.brands-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (width >=992px) {
+  .brands-area {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.brands-area a {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 120px;
+}
+
+.brands-area img {
+  width: 196px;
+  height: auto;
+  display: block;
+  opacity: 1;
+}
+
+/* Gjorde med hjälp av chatgpt ett tillägg då sista loggan var lite större än övriga och hade även en helt annan höjd.*/
+html:not(.dark) .brands-area img.brand--tweak {
+  width: 220px;
+  transform: translateY(5px)
+}
+
+
+
+
+
