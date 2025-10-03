@@ -634,6 +634,7 @@ html.dark .feature-box:focus-visible {
     row-gap: 40px;
     margin-bottom: 96px;
   }
+
   .feature-art {
     margin-bottom: 56px;
   }
@@ -645,12 +646,15 @@ html.dark .feature-box:focus-visible {
     align-items: center;
     column-gap: 64px;
   }
+
   .app-features .feature-row-alt {
     grid-template-areas: "art copy";
   }
+
   .app-features .feature-row-alt .feature-art {
     grid-area: art;
   }
+
   .app-features .feature-row-alt .feature-copy {
     grid-area: copy;
   }
@@ -715,6 +719,7 @@ html.dark .feature-box:focus-visible {
 }
 
 /* fick tipset att trycka ihop två selektorer på samma rad för att slippa upprepa kod.*/
+
 .feature-art .inner-budget,
 .feature-art .art-base {
   display: block;
@@ -730,6 +735,7 @@ html.dark .feature-box:focus-visible {
     align-self: center;
     margin-inline: 0;
   }
+
   .app-features .feature-row-alt .feature-art .inner-budget,
   .app-features .feature-row-alt .feature-art .art-base {
     margin-inline: 0;
@@ -792,4 +798,115 @@ html.dark .feature-box:focus-visible {
 }
 
 
+/* ----------------------Testimonials------------------------ */
+.testimonials {
+  background: var(--surface-1);
+  padding: clamp(56px, 9vw, 96px) 0;
+}
+
+.testimonials .container {
+  width: min(1280px, 92%);
+  margin-inline: auto;
+}
+
+.testimonials-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+@media (min-width: 992px) {
+  .testimonials-row {
+    grid-template-columns: 300px 1fr;
+    column-gap: clamp(32px, 6vw, 98px);
+  }
+}
+
+.section-copy {
+  align-self: start;
+}
+
+.section-h2 {
+  font-size: 32px;
+  line-height: 1.30;
+  font-weight: 800;
+  color: var(--clr-heading);
+  margin: 0;
+  max-width: 306px;
+  text-wrap: balance;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, minmax(430px, 1fr));
+    gap: 24px;
+    margin-top: clamp(8px, 1vw, 16px);
+  }
+}
+
+.testimonial-card {
+  position: relative;
+  background: var(--surface-2);
+  border-radius: 10px;
+  padding: 44px 32px 32px 25px;
+  box-shadow: var(--shadow-card);
+}
+
+.testimonial-card .quote-mark {
+  position: absolute;
+  top: -16px;
+  left: 24px;
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial-card .rating {
+  display: block;
+  width: 88px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  color: var(--clr-text);
+  font-size: 18px;
+  line-height: 1.60;
+  margin: 0 0 18px 0;
+}
+
+.author {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
+  gap: 24px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.author-meta {
+  display: grid;
+}
+
+.author-name {
+  font-weight: 600;
+  color: var(--clr-heading);
+  font-size: 14px;
+}
+
+.author-role {
+  color: var(--clr-muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
 
