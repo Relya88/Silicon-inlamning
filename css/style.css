@@ -1074,3 +1074,174 @@ html.dark .faq-item {
 }
 
 
+
+/* ----------------------Subscribe----------------------- */
+.subscribe {
+  background: var(--surface-2);
+  padding: clamp(20px, 3.5vw, 32px) 0;
+}
+
+.subscribe .container {
+  width: min(1278px, 92%);
+  margin-inline: auto;
+}
+
+.subscribe__card {
+  background: var(--sub-background);
+  border-radius: 5px;
+  box-shadow: var(--sub-shadow);
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  margin-inline: 0;
+}
+
+.subscribe__lead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.subscribe__icon-wrap {
+  position: relative;
+  width: 65px;
+  height: 65px;
+}
+
+.subscribe__icon-wrap img {
+  width: 65px;
+  height: 65px;
+}
+
+.subscribe__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--clr-heading);
+  margin: 0;
+  max-width: 440px;
+}
+
+.subscribe__title-break {
+  display: inline;
+}
+
+.subscribe__form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.input {
+  position: relative;
+}
+
+.input__icon {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 16px;
+  height: 16px;
+  opacity: .85;
+}
+
+.input input {
+  width: 100%;
+  height: 46px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  padding: 0 12px 0 36px;
+  font: 500 16px/1.2 "Manrope", sans-serif;
+  color: var(--clr-heading);
+}
+
+.input input::placeholder {
+  color: #98A2B3;
+}
+
+html:not(.dark) .subscribe .input input {
+  background: #FFFFFF;
+  border-color: var(--border);
+}
+
+html.dark .subscribe__card {
+  background: var(--sub-background-box);
+  border: 1px solid #1A2134;
+  box-shadow: var(--sub-shadow);
+}
+
+html.dark .input input {
+  background: #0F1422;
+  border-color: #1A2134;
+}
+
+html.dark .input input::placeholder {
+  color: #8A93A8;
+}
+
+html:not(.dark) .subscribe .input input {
+  background: #FFFFFF !important;
+  border-color: var(--border);
+}
+
+.input input:focus {
+  outline: 2px solid transparent;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, .15);
+}
+
+.subscribe .button {
+  height: 46px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+  .subscribe__card {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 62px;
+    min-height: 222px;
+    padding: 24px 99px;
+    width: calc(100% + 26px);
+    margin-right: -26px;
+  }
+
+  .subscribe__title {
+    font-size: 24px;
+    max-width: 560px;
+  }
+
+  .subscribe__title-break {
+    display: block;
+  }
+
+  .subscribe__form {
+    grid-template-columns: 360px 110px;
+    gap: 0;
+    justify-self: end;
+  }
+
+  .subscribe__form .input input {
+    height: 46px;
+    border-radius: 8px 0 0 8px;
+    border-right: 0;
+  }
+
+  .subscribe__form .button {
+    height: 46px;
+    min-width: 108px;
+    border-radius: 0 8px 8px 0;
+    border-left: 0;
+  }
+}
+
+
+
